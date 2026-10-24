@@ -1,0 +1,48 @@
+{
+  "packageId": "lk.gov.msw.plms",
+  "host": "msw-plms.gov.lk",
+  "name": "PLMS - திட்டமிடல் கடித முகாமைத்துவம்",
+  "launcherName": "PLMS",
+  "themeColor": "#1E3A8A",
+  "navigationColor": "#0F2347",
+  "backgroundColor": "#0F2347",
+  "enableNotifications": true,
+  "startUrl": "/?source=pwa",
+  "iconUrl": "https://raw.githubusercontent.com/janopan/plms/main/public/assets/icon-512.png",
+  "maskableIconUrl": "https://raw.githubusercontent.com/janopan/plms/main/public/assets/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android-keystore.keystore",
+    "alias": "plms"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [
+    {
+      "name": "மெசஞ்சர்",
+      "shortName": "Messenger",
+      "url": "/messenger",
+      "icon": "icon_1"
+    },
+    {
+      "name": "கடிதங்கள்",
+      "shortName": "Letters",
+      "url": "/#lettersTab",
+      "icon": "icon_2"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "http://localhost:5000/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": false
+    },
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  }
+}
